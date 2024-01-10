@@ -1,1 +1,15 @@
 /* add your styles here */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* margin: 100px; */
+}
+.gallery img{
+    height: 500px;
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}

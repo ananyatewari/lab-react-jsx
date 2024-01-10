@@ -27,4 +27,25 @@ export default class AppClass extends Component{
   }
 
   // code here
+  render() {
+
+    let imgobject = this.imageData();
+    let imgarr = [];
+    
+    imgobject.forEach(e => {
+      imgarr.push(
+        <img src={e.img} alt={`number${e.id}`}/>
+        )
+      });
+      
+      return (
+      <section>
+        <h1>Gallery for AppClass.jsx</h1>
+        <div className="gallery">
+          {imgarr}
+        </div>
+    </section>
+  )
 }
+}
+
